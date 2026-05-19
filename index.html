@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emilly Avatar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- ==================== PROTECTION SCRIPTS ==================== -->
+
+<script>
+      // 2. Disable Right Click
+      document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+
+      // 3. Disable Keyboard Shortcuts
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'F12') { e.preventDefault(); return false; }
+        if(e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && (e.key === 'u' || e.key === 'U')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && (e.key === 's' || e.key === 'S')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && (e.key === 'a' || e.key === 'A')) { e.preventDefault(); return false; }
+      });
+
+      // 4. Detect DevTools Open — clears page
+      var devtoolsOpen = false;
+      setInterval(function(){
+        var threshold = 160;
+        if(
+          window.outerWidth - window.innerWidth > threshold ||
+          window.outerHeight - window.innerHeight > threshold
+        ){
+          if(!devtoolsOpen){
+            devtoolsOpen = true;
+            document.body.innerHTML = "<div style='display:flex;align-items:center;justify-content:center;height:100vh;font-family:Arial;background:#1a1a1a;color:#fff;font-size:24px;'>⛔ DevTools Detected</div>";
+          }
+        } else {
+          devtoolsOpen = false;
+        }
+      }, 500);
+
+      // 5. Disable drag and drop of elements
+      document.addEventListener('dragstart', function(e){ e.preventDefault(); });
+
+      // 6. Disable printing
+      window.onbeforeprint = function(){ document.body.innerHTML = ""; };
+    </script>
+    <!-- ==================== END PROTECTION ==================== -->
+    
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="stop-btn" onclick="stopSound()">STOP</div>
+
+<div class="grid">
+
+<!-- GREEN -->
+<button class="green" onclick="playSound('Hello')">Hello?</button>
+<button class="yellow" onclick="playSound('Thanks')">Thanks for Ask</button>
+<button class="blue" onclick="playSound('Name-is-Emily')">Name is Elie</button>
+
+<button class="green" onclick="playSound('Greeting1')">Greeting-1</button>
+<button class="orange" onclick="playSound('CallFrom1')">Calling From-1</button>
+<button class="blue" onclick="playSound('Name-is-Charlotte')">Name Charlotte</button>
+
+<button class="green" onclick="playSound('Greeting2')">Greeting-2</button>
+<button class="yellow" onclick="playSound('CanYouHEarMe')">Can You Hear</button>
+<button class="orange" onclick="playSound('CallFrom2')">Calling From-2</button>
+<button class="blue" onclick="playSound('Sorry1')">Sorry to Hear</button>
+
+<button class="green" onclick="playSound('Pitch1')">Opening-0</button>
+<button class="yellow" onclick="playSound('Ok-Great')">Ok Great</button>
+<button class="orange" onclick="playSound('From-NYC')">From NYC</button>
+<button class="blue" onclick="playSound('GreatQuestion')">Great Question</button>
+
+<button class="green" onclick="playSound('Opening2')">Opening-1</button>
+<button class="yellow" onclick="playSound('GoodToknow')">Good to Know</button>
+<button class="orange" onclick="playSound('NI1)">Not Interested1</button>
+<button class="green" onclick="playSound('NewHere')">New-Here</button>
+
+
+<button class="yellow" onclick="playSound('Wonderful2')">Wonderful</button>
+<button class="orange" onclick="playSound('NI2)">Not Interested2</button>
+<button class="blue" onclick="playSound('IsthatOkay')">Is That Ok</button>
+
+
+<button class="yellow" onclick="playSound('Can-I-speak-to')">Can I Speak to</button>
+<button class="red" onclick="playSound('Can_I_say_something_01')">Can I Say</button>
+<button class="blue" onclick="playSound('RUThere')">R u There</button>
+
+
+<button class="yellow" onclick="playSound('Insurance4')">Insurance</button>
+<button class="orange" onclick="playSound('HowMuch')">How Much</button>
+<button class="blue" onclick="playSound('I-understand')">I Understand</button>
+
+
+<button class="yellow" onclick="playSound('OwnOrRent')">Own or Rent</button>
+<button class="blue" onclick="playSound('Say-again')">Say Again-1</button>
+
+
+<button class="yellow" onclick="playSound('HO')">Are u H.O</button>
+<button class="orange" onclick="playSound('LimitedTimePromotion')">Limited Time Pr</button>
+<button class="blue" onclick="playSound('Say-again2')">Say Again-2</button>
+
+<button class="green" onclick="playSound('IFWeGave')">If We Gave You</button>
+<button class="yellow" onclick="playSound('Busy')">Busy</button>
+<button class="orange" onclick="playSound('FewSystemLeft')">Few Left</button>
+<button class="blue" onclick="playSound('NoProblem')">No Problem</button>
+
+<button class="green" onclick="playSound('Transfer1')">Transfer-1</button>
+<button class="yellow" onclick="playSound('AlreadyHave')">Have a System?</button>
+<button class="orange" onclick="playSound('Why-go-with-us')">Why Go With Us</button>
+<button class="blue" onclick="playSound('Yes')">Yes</button>
+
+<button class="green" onclick="playSound('Transfer33')">Transfer-2</button>
+<button class="yellow" onclick="playSound('Under-Contract2')">Under Contract</button>
+<button class="orange" onclick="playSound('Afford')">Affordable</button>
+<button class="blue" onclick="playSound('No')">No</button>
+
+<button class="green" onclick="playSound('Transfer43')">Transfer-3</button>
+<button class="yellow" onclick="playSound('BuyOut')">Buyout</button>
+<button class="orange" onclick="playSound('Dogs4')">Dogs</button>
+<button class="blue" onclick="playSound('Sure5')">Sure</button>
+
+<button class="green" onclick="playSound('HoldOn1')">Hold on a Sec</button>
+<button class="yellow" onclick="playSound('Upgrade')">Upgrade</button>
+<button class="orange" onclick="playSound('Guns5')">Guns</button>
+<button class="blue" onclick="playSound('Good7')">Good</button>
+
+<button class="green" onclick="playSound('HoldOn2')">Xfer-Short</button>
+<button class="yellow" onclick="playSound('DontSwitch')">Don't Switch</button>
+<button class="orange" onclick="playSound('Medical-Pendant')">Medical Pendant</button>
+<button class="blue" onclick="playSound('Ok')">Ok</button>
+
+<button class="orange" onclick="playSound('Not-Interested3')">Not Interested3</button>
+<button class="yellow" onclick="playSound('RealPerson')">I'm Real</button>
+<button class="orange" onclick="playSound('Would-you-like-to')">Would You Like</button>
+<button class="blue" onclick="playSound('Laugh9')">Laugh</button>
+
+<button class="red" onclick="playSound('Good-bye')">Good Bye</button>
+<button class="yellow" onclick="playSound('DecisionMaker')">R u Dec maker</button>
+<button class="yellow" onclick="playSound('Benefit5')">Benefit</button>
+<button class="red" onclick="playSound('Closer-Busy')">Closer Busy</button>
+
+</div>
+
+<div class="stop-btn" onclick="stopSound()">STOP</div>
+
+</div> <!-- container -->
+<script src="script.js"></script>
+
+</body>
+    <!-- Zoom Controls HTML - paste inside your <body>, at the top -->
+<div class="zoom-controls">
+    <button onclick="zoomOut()">−</button>
+    <button onclick="zoomReset()">⊙</button>
+    <button onclick="zoomIn()">+</button>
+</div>
+
+<script>
+    let scale = 1;
+    const container = document.querySelector('.container');
+
+    function zoomIn() {
+        scale = Math.min(scale + 0.1, 2.0);
+        container.style.transform = `scale(${scale})`;
+    }
+    function zoomOut() {
+        scale = Math.max(scale - 0.1, 0.5);
+        container.style.transform = `scale(${scale})`;
+    }
+    function zoomReset() {
+        scale = 1;
+        container.style.transform = `scale(1)`;
+    }
+</script>
+
+</html>
